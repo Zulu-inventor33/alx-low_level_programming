@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * puts_ahalf - prints ahalf of a string
+ * puts_half - prints ahalf of a string
  * @str: input
  */
-void puts_ahalf(char *str)
+void puts_half(char *str)
 {
 	int len = 0;
 
