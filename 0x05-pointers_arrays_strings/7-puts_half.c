@@ -9,7 +9,7 @@ void puts_ahalf(char *str)
 
 	while (*str != '\0')
 	{
-		lenn++;
+		len++;
 		str++;
 	}
 
