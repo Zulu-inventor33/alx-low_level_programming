@@ -4,7 +4,7 @@
 /**
  * _atoi - The function that converts string to integer
  * @s: - string
- * @lens - length
+ * @len - length
  * Return: the int converted from the string
  */
 
@@ -15,7 +15,7 @@ int _atoi(char *s)
 	i = 0;
 	d = 0;
 	n = 0;
-	lens = 0;
+	len = 0;
 	f = 0;
 	digit = 0;
 
