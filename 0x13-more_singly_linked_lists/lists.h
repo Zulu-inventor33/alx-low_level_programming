@@ -5,26 +5,33 @@
 #include <stdlib.h>
 
 /**
- * struct listint_s - the singly linked list
- * @n: integer
- * @next: This points to the next node
+ * struct listint_s - a singly linked list
+ * @n: an integer
+ * @next: this points to the next node
  *
- * Description: The singly linked list node structure
- * for the project
+ * Description: the singly linked list node structure
+ * 
  */
 typedef struct listint_s
 {
 	int n;
 	struct listint_s *next;
-} listintt;
+} listint_t;
 
-
+/**
+ * struct listp_s - this is a singly linked list
+ * @p: the pointers of nodes
+ * @next: this points to the next node
+ *
+ * Description: a singly linked list of pointers
+ */
 typedef struct listp_s
 {
 	void *p;
 	struct listp_s *next;
 } listp_t;
 
+int _putchar(char c);
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
