@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 	close_src = close(src);
 	check_stat(close_src, src, NULL, 'C');
 	close_dest = close(dest);
-	check_IO_stat(close_dest, dest, NULL, 'C');
+	check_stat(close_dest, dest, NULL, 'C');
 	return (0);
 }
 
