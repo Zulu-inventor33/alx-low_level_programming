@@ -90,33 +90,32 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 	return (1);
 }
-
 /**
- * shash_table_create - Creates sorted hash table.
+ * shash_table_create - Creates a sorted hash table.
  * @size: size of new sorted hash table.
  *
- * Return: If an error occurs - NULL.
- *         Otherwise - pointer to new sorted hash table.
+ * Return: If error occurs - NULL.
+ *         Otherwise - a pointer to the new sorted hash table.
  */
 shash_table_t *shash_table_create(unsigned long int size)
 {
-        shash_table_t *ht;
-        unsigned long int i;
+	shash_table_t *ht;
+	unsigned long int i;
 
-        ht = malloc(sizeof(shash_table_t));
-        if (ht == NULL)
-                return (NULL);
+	ht = malloc(sizeof(shash_table_t));
+	if (ht == NULL)
+		return (NULL);
 
-        ht->size = size;
-        ht->array = malloc(sizeof(shash_node_t *) * size);
-        if (ht->array == NULL)
-                return (NULL);
-        for (i = 0; i < size; i++)
-                ht->array[i] = NULL;
-        ht->shead = NULL;
-        ht->stail = NULL;
+	ht->size = size;
+	ht->array = malloc(sizeof(shash_node_t *) * size);
+	if (ht->array == NULL)
+		return (NULL);
+	for (i = 0; i < size; i++)
+		ht->array[i] = NULL;
+	ht->shead = NULL;
+	ht->stail = NULL;
 
-        return (ht);
+	return (ht);
 }
 
 /**
