@@ -17,7 +17,7 @@ size_t min(size_t a, size_t b)
 }
 
 /**
- * binary_search_help - Function that searches for a value in an integer array using a
+ * binary_search_help - searching for a value in an integer array using a
  * binary search algorithm, not guaranteed to return lowest index if `value`
  * appears twice in `array` (modified from `binary_search`)
  * @array: pointer to first element of array to seach
@@ -55,7 +55,7 @@ int binary_search_help(int *array, int value,
 }
 
 /**
- * exponential_search - Function that searches for a value in a sorted array of integers
+ * exponential_search - searching for a value in a sorted array of integers
  * using an exponential search algorithm
  * @array: The pointer to first element of array to search
  * @size: The number of elements in array
